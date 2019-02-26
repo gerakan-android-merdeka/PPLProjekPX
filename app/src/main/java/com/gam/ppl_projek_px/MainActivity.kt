@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
+import java.sql.SQLOutput
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(v: View?) {
@@ -27,6 +28,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         println("bintang")
         println("Hai")
 
-
+        println("waw")
     }
 }
