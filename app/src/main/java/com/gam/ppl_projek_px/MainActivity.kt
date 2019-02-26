@@ -27,6 +27,12 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         button2.setOnClickListener(this)
         println("bintang")
         println("Hai")
+        println("bintang")
+        println("Hai")
+        println("bintang")
+        println("Hai")
+        println("bintang")
+        println("Hai")
 
         println("waw")
     }
