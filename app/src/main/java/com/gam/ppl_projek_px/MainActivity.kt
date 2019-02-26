@@ -24,7 +24,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         button.setOnClickListener(this)
         button2.setOnClickListener(this)
-        println("Teguh")
         println("bintang")
+
+
+        println("Hai")
     }
 }
