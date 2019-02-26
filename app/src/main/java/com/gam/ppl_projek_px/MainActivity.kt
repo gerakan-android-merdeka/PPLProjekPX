@@ -26,5 +26,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         button2.setOnClickListener(this)
         println("Teguh")
         println("bintang")
+
+
+        
     }
 }
