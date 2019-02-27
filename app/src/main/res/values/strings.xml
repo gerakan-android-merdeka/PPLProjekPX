@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">PPL-Projek-PX</string>
+    <string name="app_name">Pilkadangu Lite</string>
+    <string name="home">Beranda</string>
+    <string name="listen">Dengar Baca</string>
+    <string name="news">Berita</string>
+    <string name="account">Account</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
