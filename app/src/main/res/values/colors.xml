@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#F6F6F6</color>
     <color name="colorAccent">#FF4081</color>
     <!--addition-->
     <color name="colorNavigationIcon">#dae9f6</color>
-    <color name="colorNavigationText">#ffffff</color>
+    <color name="colorNavigationText">#2c3e50</color>
+
+    <!--bottom navigation color-->
+    <color name="colorOnClicked">#bdc3c7</color>
+    <color name="colorNotClicked">#1A023B</color>
 </resources>
