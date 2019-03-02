@@ -1,10 +1,12 @@
 package com.gam.ppl_projek_px
 
 import android.content.Intent
+import android.drm.DrmStore
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.design.widget.BottomNavigationView
 import android.support.v4.app.Fragment
+import android.support.v7.app.ActionBar
 import android.view.Menu
 import android.view.View
 import android.widget.Button
@@ -56,7 +58,21 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
         val fragment = HomeFragment.newInstance()
         addFragment(fragment)
+
+//        getSupportActionBar().setDisplayHomeAsUpEnabled(true)
+//        getSupportActionBar().setDisplayOptions(A)
+//        val actionBar = supportActionBar
+//        getSupportActionBar().setDisplayShowHomeEnabled(true)
+//        getSupportActionBar().setLogo(R.mipmap.ic_launcher)
+//        getSupportActionBar().setDisplayUseLogoEnabled(true)
+//        supportActionBar(actionBar).setDisplayShowHomeEnabled(true)
+
+
+
+
     }
+
+
 
 
 }
