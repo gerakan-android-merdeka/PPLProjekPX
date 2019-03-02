@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.support.design.widget.BottomNavigationView
 import android.support.v4.app.Fragment
 import android.support.v7.app.ActionBar
+import android.support.v7.widget.Toolbar
 import android.view.Menu
 import android.view.View
 import android.widget.Button
@@ -61,11 +62,25 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
 //        getSupportActionBar().setDisplayHomeAsUpEnabled(true)
 //        getSupportActionBar().setDisplayOptions(A)
-//        val actionBar = supportActionBar
 //        getSupportActionBar().setDisplayShowHomeEnabled(true)
 //        getSupportActionBar().setLogo(R.mipmap.ic_launcher)
 //        getSupportActionBar().setDisplayUseLogoEnabled(true)
 //        supportActionBar(actionBar).setDisplayShowHomeEnabled(true)
+//        android.R.attr.toolbarStyle
+//        supportActionBar?.setLogo(R.mipmap.ic_launcher_round)
+
+        val actionBar = supportActionBar
+//        actionBar!!.title = "Wakwaw Naik Haji"
+//        actionBar!!.subtitle = "Ini adalah Subtitle"
+
+        //display icon on the action bar
+        actionBar!!.setDisplayShowHomeEnabled(true)
+        actionBar.setLogo(R.drawable.logo)
+        actionBar.setDisplayUseLogoEnabled(true)
+
+
+
+
 
 
 
