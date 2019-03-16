@@ -30,8 +30,9 @@ class OnBoardActivity : AppCompatActivity(), View.OnClickListener {
     lateinit var mPager: ViewPager
 
     var layouts: IntArray = intArrayOf(
-        com.gam.ppl_projek_px.R.layout.welcome_1,
-        com.gam.ppl_projek_px.R.layout.welcome_2
+        com.gam.ppl_projek_px.R.layout.welcome1,
+        com.gam.ppl_projek_px.R.layout.welcome2,
+        com.gam.ppl_projek_px.R.layout.welcome3
 
     )
 
@@ -55,10 +56,9 @@ class OnBoardActivity : AppCompatActivity(), View.OnClickListener {
 
         if (Build.VERSION.SDK_INT >= 19) {
 
-            window.addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
+            window.addFlags(WindowManager.LayoutParams.FLAG_FORCE_NOT_FULLSCREEN)
 
         } else {
-
             window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
 
         }
@@ -70,8 +70,8 @@ class OnBoardActivity : AppCompatActivity(), View.OnClickListener {
         mPager.adapter = mAdapter
         // button skip and next
         dotsLayout = findViewById(com.gam.ppl_projek_px.R.id.dots) as LinearLayout
-        btnSkip = findViewById(com.gam.ppl_projek_px.R.id.btn_skip) as Button
-        btnNext = findViewById(com.gam.ppl_projek_px.R.id.btn_next) as Button
+        btnSkip    = findViewById(com.gam.ppl_projek_px.R.id.btn_skip) as Button
+        btnNext    = findViewById(com.gam.ppl_projek_px.R.id.btn_next) as Button
         btnSkip.setOnClickListener(this)
         btnNext.setOnClickListener(this)
 
@@ -90,11 +90,11 @@ class OnBoardActivity : AppCompatActivity(), View.OnClickListener {
                 createDots(p0)
 
                 if (p0 == layouts.size - 1) {
-                    btnNext.setText("Start")
+                    btnNext.setText(com.gam.ppl_projek_px.R.string.start)
                     btnSkip.visibility = View.INVISIBLE
                 } else {
-                    btnNext.setText("Next")
-                    btnSkip.visibility = View.VISIBLE
+                    btnNext.setText(com.gam.ppl_projek_px.R.string.next)
+//                    btnSkip.visibility = View.VISIBLE
                 }
 
             }
@@ -157,7 +157,7 @@ class OnBoardActivity : AppCompatActivity(), View.OnClickListener {
             var params: LinearLayout.LayoutParams = LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,
                 ViewGroup.LayoutParams.WRAP_CONTENT)
 
-            params.setMargins(4, 0, 4, 0)
+            params.setMargins(18, 0, 18, 0)
             dotsLayout.addView(dots[i], params)
 
 

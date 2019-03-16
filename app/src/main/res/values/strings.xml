@@ -9,9 +9,9 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <!-- Walkthrought Screen -->
-    <string name="next">NEXT</string>
-    <string name="skip">SKIP</string>
-    <string name="start">GOT IT</string>
+    <string name="next">Selanjutnya</string>
+    <string name="skip">Lewati</string>
+    <string name="start">Mulai</string>
 
     <string name="slide_1_title">Ketahui</string>
     <string name="slide_1_desc">Ketahui informasi mengenai Calon Gubernur Jawa Barat 2018-2023</string>
@@ -23,7 +23,7 @@
     <string name="slide_3_desc">Dapatkan informasi yang aksesibel untuk para teman tuli</string>
 
     <string name="slide_4_title">This is Title</string>
-    <string name="slide_4_desc">This is description on walkthrought screen. desinged by love</string>
+    <string name="slide_4_desc">This is description on walkthrought screen. desinged by Codelabs</string>
 
     <!--additional-->
     <string name="pref_name">My Pref</string>
