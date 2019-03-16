@@ -133,7 +133,7 @@ class OnBoardActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun loadHome() {
-        startActivity(Intent(this, MainActivity::class.java))
+        startActivity(Intent(this, MainActivity::class.java).setFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK))
         finish()
     }
 
