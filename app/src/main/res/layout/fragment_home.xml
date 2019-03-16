@@ -11,5 +11,12 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:text="@string/hello_blank_fragment" />
+    <Button
+        android:id="@+id/klikaja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center"
+        android:text="@string/next"
+    />
 
 </FrameLayout>

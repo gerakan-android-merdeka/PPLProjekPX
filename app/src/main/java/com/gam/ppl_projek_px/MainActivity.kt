@@ -12,12 +12,22 @@ import android.view.Menu
 import android.view.View
 import android.widget.Button
 import android.widget.FrameLayout
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 import java.sql.SQLOutput
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     private var content: FrameLayout? = null
+
+    lateinit var toolbar: Toolbar
+
+    fun showIntroAgain(v : View) {
+        PrefManager(this).clearPreference()
+        val intent = Intent(this, OnBoardActivity::class.java)
+        startActivity(intent)
+
+    }
 
     private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {
@@ -49,12 +59,23 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     override fun onClick(v: View?) {
+        val context = this
+        when (v!!.id) {
+            R.id.klikaja -> {
+//                val intent = Intent(context, OnBoardActivity::class.java)
+//                startActivity(intent)
+                Toast.makeText(context, "tesf sdkfjkndsfkd", Toast.LENGTH_SHORT).show()
+            }
 
+        }
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+//        toolbar = findViewById(R.id.toolbar) as Toolbar
+//        setSupportActionBar(toolbar)
 
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
         val fragment = HomeFragment.newInstance()
@@ -70,19 +91,13 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 //        supportActionBar?.setLogo(R.mipmap.ic_launcher_round)
 
         val actionBar = supportActionBar
-//        actionBar!!.title = "Wakwaw Naik Haji"
+        actionBar!!.title = "  Pilkadangu Lite"
 //        actionBar!!.subtitle = "Ini adalah Subtitle"
 
-        //display icon on the action bar
+//        display icon on the action bar
         actionBar!!.setDisplayShowHomeEnabled(true)
         actionBar.setLogo(R.drawable.logo)
         actionBar.setDisplayUseLogoEnabled(true)
-
-
-
-
-
-
 
 
     }

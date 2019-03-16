@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/slide_1_title"
+            android:textAlignment="center"
+            android:textSize="@dimen/get_started_h1"
+            android:textStyle="bold"
+            android:lineSpacingExtra="@dimen/get_started_h1_line_spacing"
+            android:layout_marginTop="@dimen/get_started_h1_margin_top"
+    />
+    <TextView
+            android:id="@+id/textView2"
+            android:layout_width="@dimen/get_started_desc_width"
+            android:layout_height="wrap_content"
+            android:text="@string/slide_1_desc"
+            android:layout_marginTop="@dimen/get_started_desc_margin_top"
+            android:textSize="@dimen/get_started_desc"
+            android:lineSpacingExtra="@dimen/get_started_desc_line_spacing"
+            android:textAlignment="center"
+            android:width="@dimen/get_started_desc_width"
+            android:layout_centerHorizontal="true"
+    />
+    <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/get_started_image1_margin_top"
+            android:layout_marginBottom="@dimen/get_started_image_margin_bottom"
+            android:src="@drawable/get_started1"
+    />
+
+</RelativeLayout>
