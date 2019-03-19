@@ -14,6 +14,7 @@ class PageAdapter : PagerAdapter {
 
     lateinit var con: Context
 
+
     constructor(layouts: IntArray, con: Context) : super() {
         this.layouts = layouts
         this.con = con

@@ -8,7 +8,7 @@
     <color name="colorNavigationText">#2c3e50</color>
 
     <!--bottom navigation color-->
-    <color name="colorNotClicked">#bdc3c7</color>
+    <color name="colorNotClicked">#1E1B1B</color>
     <color name="colorOnClicked">#1A023B</color>
     <color name="colorOnClickedOrange">#d35400</color>
     <color name="colorOnBoardingBotton">#FC4E00</color>
