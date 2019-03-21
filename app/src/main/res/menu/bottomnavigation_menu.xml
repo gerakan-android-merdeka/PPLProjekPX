@@ -18,10 +18,4 @@
             android:icon="@drawable/news_menu"
     />
 
-    <!--
-    <item
-        android:id="@+id/account_menu"
-        android:title="@string/account"
-        android:icon="@drawable/ic_account"/>
-    -->
 </menu>
