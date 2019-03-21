@@ -14,6 +14,7 @@ import android.widget.Button
 import android.widget.FrameLayout
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.welcome1.*
 import java.sql.SQLOutput
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
@@ -22,7 +23,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     lateinit var toolbar: Toolbar
 
-    fun showIntroAgain(v : View) {
+    fun showIntroAgain(v: View) {
         PrefManager(this).clearPreference()
         val intent = Intent(this, OnBoardActivity::class.java)
         startActivity(intent)
@@ -30,20 +31,27 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
+        navigation.menu.getItem(0).setIcon(R.drawable.home)
+        navigation.menu.getItem(1).setIcon(R.drawable.hearing_menu)
+        navigation.menu.getItem(2).setIcon(R.drawable.news_menu)
         when (item.itemId) {
             R.id.home_menu -> {
                 val fragment = HomeFragment.newInstance()
                 addFragment(fragment)
+                item.setIcon(R.drawable.home_menu)
                 return@OnNavigationItemSelectedListener true
+
             }
-            R.id.listen_menu-> {
+            R.id.listen_menu -> {
                 val fragment = ListenFragment()
                 addFragment(fragment)
+                item.setIcon(R.drawable.hearing)
                 return@OnNavigationItemSelectedListener true
             }
-            R.id.news_menu-> {
+            R.id.news_menu -> {
                 val fragment = NewsFragment()
                 addFragment(fragment)
+                item.setIcon(R.drawable.news)
                 return@OnNavigationItemSelectedListener true
             }
         }
@@ -101,8 +109,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
 
     }
-
-
 
 
 }
